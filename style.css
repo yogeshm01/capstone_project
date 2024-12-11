@@ -20,17 +20,8 @@ body {
     font-size: 24px;
     color: #fff;
     font-family: 'IBM Plex Mono', monospace;
-    background: linear-gradient(to right, #4CAF50, blue);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: colorChange 5s infinite alternate;
-
 }
-@keyframes colorChange {
-    50% {
-      background: linear-gradient(to right, blue, #4CAF50);
-    }
-  }
+
 
 .navbar nav a {
     color: #fff;
@@ -80,6 +71,8 @@ hr {
     flex-direction: column;
     align-items: center;
 }
+
+
 
 .large-project {
     margin-bottom: 20px;
