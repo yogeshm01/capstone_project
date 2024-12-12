@@ -288,68 +288,82 @@ h2 {
     border-radius: 8px;
     color: white;
 }
+.contact-button a{
+    text-decoration: none;
+    color: white;
+}
 
 .contact-button:hover {
     background-color: #333;
 }
 
 
-@media (max-width: 768px) {
+/* Small devices (phones, 576px and down) */
+@media (max-width: 576px) {
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+      flex-direction: column;
+      align-items: center;
     }
-
+  
     .navbar nav a {
-        margin-left: 0;
-        margin-top: 10px;
+      margin-left: 0;
+      margin-top: 10px;
     }
-
-    .hero h1 {
-        font-size: 24px;
+  
+    .welcome h1 {
+      font-size: 28px;
     }
-
-    .hero {
-        padding: 20px;
-    }
-
+  
     .project-grid {
-        grid-template-columns: 1fr;
-        gap: 10px;
+      grid-template-columns: 1fr;
     }
-
+  
     .project img {
-        width: 100%;
-        height: auto;
+      width: 100%;
+      height: auto;
     }
-
+  
     .subscribe {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
-
+  
     .subscribe input,
     .subscribe button {
-        width: 100%;
-        margin-bottom: 10px;
+      width: 100%;
+      margin-bottom: 10px;
     }
-
+  
     .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-
+  
     .footer-note {
-        margin-top: 10px;
+      margin-top: 10px;
     }
-
+  
     .large-project img {
-        width: 100%;
-        height: auto;
+      width: 100%;
+      height: auto;
     }
-
+  
     .large-project {
-        padding: 10px;
+      padding: 10px;
     }
-}
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .project-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .project-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
