@@ -14,6 +14,7 @@ body {
     align-items: center;
     padding: 20px;
     background-color: #111;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .navbar .logo {
@@ -55,6 +56,7 @@ body {
     font-weight: 300;
     color: #fff;
     font-family: 'IBM Plex Sans', sans-serif;
+    animation: slideIn 1.2s ease-out;
 }
 
 hr {
@@ -98,6 +100,7 @@ hr {
     border-radius: 10px;
     transition: transform 0.3s ease;
     padding-bottom: 20px;
+    animation: fadeIn 1.8s ease-in-out;
 }
 
 
@@ -121,6 +124,17 @@ hr {
     align-items: flex-start;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.project:nth-child(1) {
+    animation-delay: 0.3s;
+}
+.project:nth-child(2) {
+    animation-delay: 0.6s;
+}
+.project:nth-child(3) {
+    animation-delay: 0.9s;
 }
 
 .project:hover {
