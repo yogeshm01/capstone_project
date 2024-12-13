@@ -7,7 +7,7 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     margin: 0;
     padding: 0;
-    cursor: url("cursor2\(1\).png"), pointer;
+    cursor: url("cursor.png"), pointer;
     overflow-x: hidden;
 }
 
