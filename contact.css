@@ -21,7 +21,7 @@ body {
 }
 
 .navbar .logo {
-    font-size: 24px;
+    font-size: 35px;
     color: #fff;
     font-family: 'IBM Plex Mono', monospace;
 }
@@ -34,6 +34,7 @@ body {
 .navbar nav a {
     color: #fff;
     text-decoration: none;
+    font-size: 20px;
     margin-left: 20px;
     font-family: 'IBM Plex Sans', sans-serif;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
