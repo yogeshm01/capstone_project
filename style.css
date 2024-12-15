@@ -3,12 +3,11 @@ html {
 }
 
 body {
-    background-color: #111;
+    background-color: #000;
     font-family: 'IBM Plex Sans', sans-serif;
     margin: 0;
     padding: 0;
     cursor: url("cursor.png"), pointer;
-    overflow-x: hidden;
 }
 
 .navbar {
@@ -67,13 +66,13 @@ hr {
 
 .welcome {
     text-align: center;
-    /* padding: 0 15px; */
+    margin: 0;
+    padding: 20px 0;
 }
 
 .welcome h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     margin: 0;
-    padding: 0;
     width: 100%;
     font-weight: 300;
     color: #fff;
@@ -86,7 +85,9 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 15px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 .large-project {
@@ -95,7 +96,8 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 90%;
+    margin: 20px auto;
     height: auto;
     border-radius: 10px;
     overflow: hidden;
@@ -186,6 +188,7 @@ footer {
 }
 
 .contact-section {
+    padding-top: 60px;
     margin-bottom: 20px;
 }
 
@@ -193,6 +196,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
     gap: 10px;
     color: #fff;
 }
@@ -204,39 +208,40 @@ footer {
 }
 
 h2 {
+    padding-left: 70px;
+    font-size: 24px;
     color: #fff;
-    margin: 5px 0;
-    text-align: left;
 }
 
 .contact-text {
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    margin: 0;
+    padding-right: 240px;
     color: #fff;
-    margin-left: 20px;
-    text-align: right;
 }
 
 .follow-section {
+    margin-top: 100px;
     margin-bottom: 20px;
 }
 
 .follow-section h2 {
     text-align: center;
+    font-weight: normal;
 }
 
 .subscribe {
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    margin: 40px 0;
 }
 
 .subscribe input {
     padding: 10px;
     border: 1px solid #444;
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px;
     width: 250px;
-    background: #333;
+    background: #000;
     color: #fff;
 }
 
@@ -245,7 +250,7 @@ h2 {
     border: none;
     background-color: #4CAF50;
     color: #000;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px;
     cursor: pointer;
 }
 .subscribe button:hover{
@@ -265,7 +270,9 @@ h2 {
 .social-icons img {
     width: 30px;
     height: 30px;
+    transition: all 0.3s;
 }
+
 
 .footer-container {
     display: flex;
