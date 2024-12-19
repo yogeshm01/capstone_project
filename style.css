@@ -20,28 +20,38 @@ body {
 }
 
 .navbar .logo {
+    padding-left: 40px;
     font-size: 35px;
     color: #fff;
     font-family: 'IBM Plex Mono', monospace;
+    font-weight: normal;
+    transition: all 0.3s;
+}
+.navbar .logo:hover{
+    filter: brightness(3) drop-shadow(8px 8px 10px #20D816 );
+
 }
 
 .navbar nav {
     display: flex;
     align-items: center;
+    margin-right: 50px;
+
 }
 
 .navbar nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 20px;
     font-family: 'IBM Plex Sans', sans-serif;
     transition: all 0.3s ease-in-out;
+    font-weight: normal;
 }
 
 .navbar nav a:hover {
-    color: #4CAF50;
-    filter: brightness(2) drop-shadow(0px 8px 10px #4CAF50 );
+    color: #20D816;
+    filter: brightness(2) drop-shadow(0px 8px 10px #20D816 );
 
 }
 
@@ -68,12 +78,13 @@ hr {
 
 .welcome {
     text-align: center;
-    margin: 0;
-    padding: 20px 0;
+    /* margin: 0; */
+    margin-top: 50px;
+    padding: 100px 0 0 0;
 }
 
 .welcome h1 {
-    font-size: 6rem;
+    font-size: 7rem;
     margin: 0;
     width: 100%;
     font-weight: 300;
@@ -152,6 +163,8 @@ hr {
     height: 277px;
     object-fit: cover;
     transition: opacity 0.3s ease;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .project:hover img {
@@ -162,6 +175,7 @@ hr {
     text-align: left;
     transform: translateY(20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
+    padding-top: 0px;
     padding: 10px;
 }
 
@@ -172,10 +186,12 @@ hr {
 
 .project-info h3 {
     font-size: 18px;
-    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 3px;
     font-family: 'IBM Plex Sans', monospace;
     color: #fff;
     text-align: left;
+    font-weight: normal;
 }
 
 .project-info p {
@@ -251,13 +267,14 @@ footer {
 .subscribe button {
     padding: 10px 20px;
     border: none;
-    background-color: #4CAF50;
+    background-color: #20D816;
     color: #000;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s;
 }
 .subscribe button:hover{
-    background-color: #4caf4fa9;
+    background-color: #12a90a;
 }
 
 .social-icons {
@@ -324,8 +341,13 @@ footer {
 
 }
 
-/* Small devices 576px */
-@media (max-width: 576px) {
+/* mobile */
+@media (max-width: 576px)  {
+    body{
+        overflow-x: hidden;
+        align-items: center;
+
+    }
     .navbar {
         flex-direction: column;
         text-align: center;
@@ -336,14 +358,19 @@ footer {
         width: 100%;
     }
 
-    .navbar nav a {
-        margin: 10px 0;
+     .navbar nav a {
+        margin: 10px 0px;
+        margin-left: 50px;
+
         width: 100%;
         padding: 10px;
-    }
+        text-align: center;
+
+    } 
 
     .welcome h1 {
-        font-size: 24px;
+
+        font-size: 40px;
     }
 
     .large-project, .large-project img {
@@ -359,6 +386,16 @@ footer {
 
     .project img {
         max-width: 100%;
+    
+    }
+
+    .contact-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-text{
+        padding-left: 30px ;
+        padding-right: 0px;
     }
 
     .subscribe {
@@ -383,7 +420,7 @@ footer {
     }
 }
 
-/* Medium devices (tablets, 577px to 768px) */
+/* tablet */
 @media (min-width: 577px) and (max-width: 768px) {
     .navbar nav a {
         margin-left: 10px;
@@ -394,7 +431,7 @@ footer {
     }
 
     .welcome h1 {
-        font-size: 32px;
+        font-size: 55px;
     }
 
     .large-project {
@@ -402,18 +439,7 @@ footer {
     }
 }
 
-/* Large devices (small desktops, 769px to 992px) */
-@media (min-width: 769px) and (max-width: 992px) {
-    .project-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .large-project {
-        height: auto;
-    }
-}
-
-/* Extra large devices (large desktops, 993px and up) */
+/* desktop */
 @media (min-width: 993px) {
     .project-grid {
         grid-template-columns: repeat(3, 1fr);
